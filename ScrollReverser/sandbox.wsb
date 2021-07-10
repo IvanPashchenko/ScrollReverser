@@ -1,0 +1,14 @@
+﻿<Configuration>
+    <VGpu>Enable</VGpu>
+    <Networking>Disable</Networking>
+    <MappedFolders>
+        <MappedFolder>
+            <HostFolder>C:\Users\ivan.pashchenko\RiderProjects\ScrollReverser\ScrollReverser\bin\Debug\net5.0\win-x64\publish\</HostFolder>
+            <ReadOnly>true</ReadOnly>
+        </MappedFolder>
+    </MappedFolders>
+    <LogonCommand>
+        <!-- https://stackoverflow.com/questions/64795150/windows-sandbox-powershell-logon-command-window-not-visible -->
+        <Command>C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -executionpolicy unrestricted -command "start powershell {-noexit C:\\Users\\WDAGUtilityAccount\\Desktop\\ScrollReverser.exe test}"</Command>
+    </LogonCommand>
+</Configuration>
